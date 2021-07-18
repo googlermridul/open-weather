@@ -1,0 +1,134 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-shadow: border-box;
+}
+body {
+   font-family: 'Acme', sans-serif;
+   background: url(img/windmills.png);
+   background-size: cover;
+   background-position: center top;
+   height: 100vh;
+}
+.container {
+   max-width: 100%;
+}
+.form-control:focus,
+.btn:focus {
+   outline: 0;
+   box-shadow: 0 0 0 0rem rgb(0 123 255 / 25%);
+}
+
+/* TOP NAVIGRATION */
+.top-nav {
+   display: flex;
+   align-items: center;
+   margin: 30px;
+}
+.top-nav .logo {
+   font-size: 36px;
+   color: #635789;
+   text-decoration: none;
+}
+.top-nav .nav-item {
+   margin-left: auto;
+}
+.top-nav .nav-item a {
+   color: #635789;
+   text-decoration: none;
+   font-size: 18px;
+   margin-left: 30px;
+}
+
+/* WEATHER DETAIL BOX */
+.detail-box {
+   text-align: center;
+}
+.temperature {
+   display: flex;
+   justify-content: center;
+}
+.temperature .weather-icon {
+   width: 120px;
+   height: 120px;
+}
+.temperature .txt {
+   display: flex;
+   align-items: baseline;
+}
+.temperature .txt h2 {
+   font-size: 120px;
+   color: #272c49;
+}
+.temperature .txt h3 {
+   font-size: 30px;
+}
+
+
+.detail-box .city {
+   color: #272c49;
+   font-size: 60px;
+}
+
+.input-group {
+   background: #fff;
+   box-shadow: 0 0px 50px 0px rgb(0 0 0 / 10%);
+   border-radius: 100px;
+   overflow: hidden;
+   position: relative;
+   max-width: 500px;
+   margin: 50px auto;
+}
+.input-group .form-control {
+   background: #fff;
+   height: 70px;
+   border: none;
+   font-size: 18px;
+   color: #272c49;
+   padding: 25px;
+}
+.search-btn {
+   font-size: 18px;
+   width: 130px;
+   border-radius: 0px;
+   background: #272c49;
+   color: #fff;
+   padding-top: 10px;
+}
+.search-btn:hover {
+   color: #fff;
+}
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 576px) {
+   .top-nav {
+      margin: 5px;
+   }
+   .top-nav .logo {
+      font-size: 32px;
+   }
+   .top-nav .nav-item a {
+      margin-left: 15px;
+   }
+   .input-group {
+      margin-top: 100px;
+   }
+   .input-group .form-control {
+      height: 60px;
+   }
+   .input-group .btn {
+      width: 110px;
+   }
+   .temperature .weather-icon {
+      width: 100px;
+      height: 100px;
+   }
+   .temperature .txt h2 {
+      font-size: 100px;
+   }
+   .temperature .txt h3 {
+      font-size: 28px;
+  }
+}

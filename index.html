@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- GOOGLE FONT CDN -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Acme&family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <!-- FONT AWESOME CDN -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+   <!-- BOOTSTRAP CDN -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+   <title>Open Weather</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+
+
+   <div class="container">
+      <div class="row">
+         <div class="col-12 part1">
+            <div class="left-part">
+
+               <div class="top-nav">
+                  <a href="#" class="logo">Weather</a>
+                  <div class="nav-item">
+                     <a href="#">News</a>
+                     <a href="#">Maps</a>
+                     <a href="#">Climate</a>
+                  </div>
+               </div>
+
+               <div class="input-group">
+                  <input id="inputField" type="text" class="form-control" placeholder="Search by city name">
+                  <button id="searchBtn" class="btn search-btn">Search</button>
+               </div>
+
+               <div class="detail-box">
+                  <div class="temperature">
+                     <img id="icon" class="weather-icon img-fluid" src="http://openweathermap.org/img/wn/10d@4x.png" alt="">
+                     <div class="txt">
+                        <h2><span id="temp">29</span>°</h2>
+                        <h3 id="weather">Drizzle</h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   
+
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
